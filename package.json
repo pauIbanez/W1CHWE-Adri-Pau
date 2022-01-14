@@ -1,0 +1,21 @@
+{
+  "name": "w1chwe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.48.0",
+    "husky": "^7.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "font-awesome": "^4.7.0"
+  }
+}
