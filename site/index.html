@@ -36,13 +36,17 @@
     <header>
       <section class="banners"></section>
       <nav class="main-nav">
-        <button class="main-nav__item"></button>
-        <button class="main-nav__item"></button>
+        <button class="main-nav__item"><i class="fa fa-bars"></i></button>
+        <button class="main-nav__item"><i class="fa fa-user-plus"></i></button>
         <section class="main-nav__group">
-          <button class="main-nav-group__item">s</button>
+          <button class="main-nav-group__item main-nav-group__item--search">
+            <i class="fa fa-search"></i>
+          </button>
           <section class="main-nav-group__item main-nav-group__item--cart">
-            <a href="" class="cart__item">0</a>
-            <span class="cart__item">A</span>
+            <a href="" class="cart__item"
+              ><i class="fa fa-shopping-cart"></i
+            ></a>
+            <span class="cart__item cart__item2" id="cart-counter">0</span>
           </section>
         </section>
       </nav>
