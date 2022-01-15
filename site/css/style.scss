@@ -134,6 +134,7 @@ li {
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 20px;
 
     .footer-contact {
       &__item {
@@ -144,6 +145,17 @@ li {
         justify-content: center;
         align-items: center;
         height: 180px;
+
+        &--main {
+          background-color: red;
+          display: flex;
+          align-items: center;
+        }
+      }
+
+      &__subscribe {
+        display: flex;
+        flex-direction: column;
       }
 
       &__section-title {
