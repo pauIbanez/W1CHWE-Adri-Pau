@@ -68,3 +68,57 @@ li {
     background-color: orchid;
   }
 }
+
+.footer {
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  &__header {
+    background-color: brown;
+    width: 100%;
+    height: 440px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .footer-header {
+      &__item {
+        background-color: green;
+        width: 162px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      &__item-image {
+        background-color: pink;
+        width: 85px;
+        height: 60px;
+      }
+
+      &__item-title {
+        background-color: red;
+        width: 100%;
+        height: 18px;
+      }
+
+      &__item-text {
+        background-color: yellow;
+        width: 100%;
+      }
+    }
+  }
+  &__contact-media {
+    background-color: coral;
+    width: 100%;
+    height: 750px;
+  }
+  &__copyright {
+    background-color: black;
+    width: 100%;
+    height: 50px;
+  }
+}
