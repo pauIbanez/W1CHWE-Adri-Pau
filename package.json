@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "startup": "startup",
+    "script1": "cp -R node_modules site/",
+    "script2": "npx sass site/css/style.scss site/compiled/css/style.css",
+    "startup": "npm run script1 && npm run script2",
     "prepare": "husky install"
   },
   "keywords": [],
