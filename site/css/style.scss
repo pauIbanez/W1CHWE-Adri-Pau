@@ -53,3 +53,18 @@ li {
     }
   }
 }
+
+.header-logo-container {
+  background-color: orange;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  .header-logo-container__image {
+    height: 50px;
+    width: 276px;
+    background-color: orchid;
+  }
+}
