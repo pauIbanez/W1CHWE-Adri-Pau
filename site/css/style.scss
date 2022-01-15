@@ -42,6 +42,14 @@ a {
   padding: 0;
 }
 
+.banners {
+  width: 232px;
+  height: 140px;
+  background-color: blue;
+  top: 0;
+  left: 20%;
+}
+
 .main-nav {
   background-color: yellow;
   height: 50px;
@@ -107,7 +115,7 @@ $icon-size: 100px;
 .main-content {
   margin-top: $icon-size / 2;
   height: fit-content;
-  background-color: gray;
+  background-color: #f8f8f8;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -119,6 +127,8 @@ $icon-size: 100px;
     min-height: $icon-size;
     min-width: $icon-size;
     background-color: green;
+    display: flex;
+    justify-content: center;
     position: absolute;
     top: -$icon-size / 2;
     left: 50%;
@@ -128,29 +138,27 @@ $icon-size: 100px;
   }
 
   .section-title {
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
-    width: fit-content;
-
+    width: 218px;
+    font-size: 22px;
     margin-top: ($icon-size / 2) + 20px;
     margin-bottom: ($icon-size / 2);
-    &::before,
-    &::after {
-      border: 2px solid red;
-      background-color: red;
-      height: 0;
-      width: 110%;
-      content: " ";
-    }
+
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    font-stretch: 100%;
+    letter-spacing: 6px;
+    font-weight: 900;
   }
 
   &__cards-container {
-    background-color: rosybrown;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -168,6 +176,8 @@ $icon-size: 100px;
 
     .card__card-info {
       height: 76px;
+      width: 170px;
+      padding: 20px;
       position: absolute;
       display: flex;
       justify-content: center;
@@ -176,13 +186,31 @@ $icon-size: 100px;
       left: 0;
       bottom: 0;
       z-index: 2;
+      color: #6c6964;
+
+      h2 {
+        font-size: 18px;
+      }
+
+      &::after {
+        content: "";
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-bottom: 76px solid rgba(255, 255, 255, 0.8);
+        border-right: 76px solid transparent;
+        position: absolute;
+        right: -76px;
+        top: 0;
+      }
     }
   }
 }
 
 .button {
-  background-color: royalblue;
+  background-color: #ff5959;
   height: 57px;
   padding: 15px 30px;
   width: fit-content;
+  color: white;
 }
