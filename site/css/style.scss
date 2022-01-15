@@ -24,6 +24,15 @@ li {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+
+  &:visited {
+    color: black;
+  }
+}
+
 .banners,
 .secondary-nav {
   display: none;
@@ -97,13 +106,14 @@ $icon-size: 100px;
 
 .main-content {
   margin-top: $icon-size / 2;
-  // Placeholder height
-  height: 300px;
+  height: fit-content;
   background-color: gray;
   position: relative;
   display: flex;
-  justify-content: center;
-  padding-top: ($icon-size / 2) + 20px;
+  flex-direction: column;
+  align-items: center;
+  // placeholder
+  margin-bottom: 300px;
 
   &::before {
     min-height: $icon-size;
@@ -116,18 +126,63 @@ $icon-size: 100px;
     content: url("example.png");
     z-index: 1;
   }
-}
 
-.section-title {
-  padding: 20px;
-  height: fit-content;
-  &::before,
-  &::after {
-    border: 2px solid red;
-    width: 110%;
+  .section-title {
+    padding: 20px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: fit-content;
+
+    margin-top: ($icon-size / 2) + 20px;
+    margin-bottom: ($icon-size / 2);
+    &::before,
+    &::after {
+      border: 2px solid red;
+      background-color: red;
+      height: 0;
+      width: 110%;
+      content: " ";
+    }
+  }
+
+  &__cards-container {
+    background-color: rosybrown;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: ($icon-size / 2);
+  }
+
+  &__card {
+    background-color: red;
+    width: 325px;
+    height: 136px;
+    position: relative;
+
+    .card__card-info {
+      height: 76px;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.8);
+      left: 0;
+      bottom: 0;
+      z-index: 2;
+    }
   }
 }
 
-.footer {
-  margin-top: 125px;
+.button {
+  background-color: royalblue;
+  height: 57px;
+  padding: 15px 30px;
+  width: fit-content;
 }
