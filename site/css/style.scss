@@ -1,3 +1,7 @@
+@import "scssDep/extends";
+@import "scssDep/mixins";
+@import "scssDep/variables";
+
 * {
   box-sizing: border-box;
 }
@@ -24,7 +28,6 @@ li {
   padding: 0;
 }
 
-
 p {
   margin: 0;
 }
@@ -35,7 +38,6 @@ a {
   &:visited {
     color: black;
   }
-
 }
 
 .banners,
@@ -260,7 +262,6 @@ a {
     height: 50px;
   }
 }
-$icon-size: 100px;
 
 .main-content {
   margin-top: $icon-size / 2;
@@ -270,7 +271,6 @@ $icon-size: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  // placeholder
   margin-bottom: 300px;
 
   &::before {
