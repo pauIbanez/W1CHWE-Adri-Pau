@@ -9,7 +9,6 @@
 body {
   margin: 0;
   font-family: "Source Sans Pro", sans-serif;
-  background-color: #f8f8f8;
 }
 
 button {
@@ -68,6 +67,7 @@ a {
   top: 0;
   left: 0;
   width: 100%;
+  background-color: #f8f8f8;
   z-index: 5;
 
   &__item {
