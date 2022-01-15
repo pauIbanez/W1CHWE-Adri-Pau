@@ -157,6 +157,17 @@ li {
       &__media-link-container {
         background-color: red;
         height: 38px;
+        display: flex;
+        align-items: center;
+
+        .footer-media-links-container__media-link {
+          background-color: white;
+          padding-left: 2px;
+          padding-right: 2px;
+          height: 100%;
+          display: flex;
+          align-items: center;
+        }
       }
     }
   }
