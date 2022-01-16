@@ -76,12 +76,18 @@ a {
   display: flex;
   justify-content: center;
   gap: 50px;
+  font-size: 25px;
 
   &__item {
     width: 50px;
     min-width: 50px;
+
     &--desk {
       display: none;
+    }
+
+    .fa-bars {
+      color: #ff5959;
     }
   }
 
@@ -539,6 +545,10 @@ a {
             font-size: 13px;
             font-weight: 400;
           }
+        }
+
+        .fa-bars {
+          color: #000;
         }
 
         &--mobile {
