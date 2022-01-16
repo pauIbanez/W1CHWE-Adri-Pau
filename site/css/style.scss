@@ -356,6 +356,19 @@ a {
         flex-direction: column;
         align-items: center;
 
+        .form-and-checkbox {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 3px;
+
+          .footer-contact__privacy-terms {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+          }
+        }
+
         button {
           width: 300px;
           height: 40px;
@@ -368,10 +381,6 @@ a {
           width: 300px;
           height: 40px;
         }
-      }
-
-      .footer-contact__privacy-terms {
-        display: flex;
       }
 
       &__section-title {
@@ -703,9 +712,6 @@ a {
           padding: 0 50px;
 
           .footer-contact {
-            &__section-title {
-            }
-
             &__subscribe {
               display: flex;
               flex-direction: row;
