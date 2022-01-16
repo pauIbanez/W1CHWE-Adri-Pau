@@ -62,7 +62,7 @@ a {
 
 .header {
   height: fit-content;
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100vw;
@@ -125,7 +125,7 @@ a {
 }
 
 .header-logo-container {
-  margin-top: 50px;
+  padding-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -409,7 +409,7 @@ a {
 
   .header {
     width: $header-width;
-    position: absolute;
+    position: relative;
     top: 0;
     left: calc(50% - ($header-width / 2));
 
