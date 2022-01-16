@@ -56,6 +56,7 @@ a {
   background-color: blue;
   top: 0;
   left: 20%;
+  position: absolute;
 }
 
 .main-nav {
@@ -371,4 +372,10 @@ a {
   padding: 15px 30px;
   width: fit-content;
   color: white;
+}
+
+@media (min-width: 600px) {
+  .banners {
+    display: flex;
+  }
 }
