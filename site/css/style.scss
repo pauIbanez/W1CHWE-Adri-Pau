@@ -485,7 +485,13 @@ a {
     }
 
     &--first {
-      background-image: url("img/main/fiestastematicas@326x135.png");
+      background-image: url("../../img/main/fiestastematicas@325x136.png");
+    }
+    &--seccond {
+      background-image: url("../../img/main/fiestaspersonajes@325x136.png");
+    }
+    &--third {
+      background-image: url("../../img/main/accesoriosfiestas@325x136.png");
     }
   }
 }
