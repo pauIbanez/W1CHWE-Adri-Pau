@@ -872,6 +872,11 @@ i {
       margin: 0 50px;
       width: 100%;
 
+      .section-separator {
+        height: 150px;
+        width: 0;
+      }
+
       .footer-contact__item {
         &--top {
           display: flex;
@@ -881,10 +886,6 @@ i {
         &--main {
           display: flex;
           align-items: flex-start;
-          border-right: 1px solid #bbb8b6;
-          border-left: 1px solid #bbb8b6;
-          border-top: none;
-          border-bottom: none;
           height: 70%;
           padding: 0 50px;
 
