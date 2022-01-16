@@ -222,14 +222,14 @@ a {
 }
 
 .footer {
-  background-color: grey;
+  background-color: #f8f8f8;
   display: flex;
   flex-direction: column;
   width: 100%;
   margin-top: 125px;
 
   &__header {
-    background-color: brown;
+    background-color: #e8e6e5;
     width: 100%;
     height: 440px;
     display: flex;
@@ -252,25 +252,22 @@ a {
         background-color: pink;
         width: 85px;
         height: 60px;
+        margin-bottom: 25px;
       }
 
       &__item-title {
         background-color: red;
         width: 100%;
         height: 18px;
+        font-size: 15px;
       }
 
       &__item-text {
         background-color: yellow;
         width: 100%;
+        font-size: 12px;
       }
     }
-  }
-
-  &__contact-media {
-    background-color: coral;
-    width: 100%;
-    height: 750px;
   }
 
   &__copyright {
@@ -280,7 +277,6 @@ a {
   }
 
   &__contact-media {
-    background-color: yellow;
     width: 100%;
     height: 750px;
     display: flex;
@@ -290,7 +286,6 @@ a {
 
     .footer-contact {
       &__item {
-        background-color: cyan;
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -298,20 +293,25 @@ a {
         align-items: center;
 
         &--top {
-          background-color: saddlebrown;
           height: 160px;
         }
 
         &--bottom {
-          background-color: yellowgreen;
           height: 340px;
+
+          .footer-contact__info {
+            margin-bottom: 9px;
+            font-size: 14px;
+            color: #ff5959;
+          }
         }
 
         &--main {
-          background-color: red;
           display: flex;
           align-items: center;
           height: 250px;
+          border-top: 1px solid #bbb8b6;
+          border-bottom: 1px solid #bbb8b6;
         }
 
         a {
@@ -331,14 +331,32 @@ a {
       &__subscribe {
         display: flex;
         flex-direction: column;
+        align-items: center;
+
+        button {
+          width: 300px;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        [type="email"] {
+          width: 300px;
+          height: 40px;
+        }
+      }
+
+      .footer-contact__privacy-terms {
+        display: flex;
       }
 
       &__section-title {
-        background-color: darkblue;
         text-transform: uppercase;
         font-size: 14px;
         width: fit-content;
         height: 16px;
+        margin-bottom: 15px;
       }
 
       &__media-link-container {
@@ -358,12 +376,14 @@ a {
   }
 
   &__copyright {
-    background-color: black;
+    background-color: #ff5959;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 50px;
+    color: #fff;
+    font-size: 14px;
   }
 }
 
