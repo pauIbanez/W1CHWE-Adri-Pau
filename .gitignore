@@ -2,3 +2,4 @@ node_modules
 site/node_modules
 .husky/
 site/compiled/
+site/img/reference
