@@ -79,6 +79,17 @@ a {
   font-size: 25px;
   background-color: #f8f8f8;
 
+  .background {
+    display: none;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: calc(-100vw / 2 + $header-width / 2);
+    right: calc(-100vw / 2 + $header-width / 2);
+    background-color: #f8f8f8;
+    z-index: -1;
+  }
+
   &__item {
     width: 50px;
     min-width: 50px;
@@ -544,6 +555,10 @@ a {
     .main-nav {
       width: $header-width;
       justify-content: flex-end;
+
+      .background {
+        display: block;
+      }
 
       &__item {
         &--desk {
