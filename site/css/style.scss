@@ -127,8 +127,8 @@ a {
   width: 100%;
   height: fit-content;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
 
   .header-logo-container {
     display: flex;
@@ -143,11 +143,11 @@ a {
   }
 
   .secondary-nav {
+    display: none;
     background-color: chartreuse;
     width: 570px;
     height: 100%;
     padding-top: 50px;
-    display: flex;
     flex-direction: column;
 
     .secondary-nav__slim {
