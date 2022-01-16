@@ -670,7 +670,7 @@ a {
       width: 100%;
       display: flex;
       align-items: center;
-      flex-direction: column;
+      flex-direction: row;
       max-height: max-content;
 
       .footer-header__item {
@@ -694,6 +694,7 @@ a {
       height: fit-content;
       padding-top: 0;
       margin: 0 50px;
+      width: 100%;
 
       .footer-contact__item {
         &--top {
@@ -722,6 +723,7 @@ a {
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-start;
+                align-items: flex-start;
               }
 
               .footer-contact__privacy-terms {
