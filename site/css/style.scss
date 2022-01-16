@@ -504,7 +504,8 @@ i {
 }
 
 .main-content {
-  margin-top: $icon-size / 2;
+  margin-top: calc($icon-size / 2);
+  padding-top: calc($icon-size / 4);
   height: fit-content;
   background-color: #f8f8f8;
   position: relative;
@@ -516,14 +517,13 @@ i {
   &::before {
     min-height: $icon-size;
     min-width: $icon-size;
-    background-color: green;
     display: flex;
     justify-content: center;
     position: absolute;
-    top: -$icon-size / 2;
+    top: calc(0px - $icon-size / 2);
     left: 50%;
     margin-left: -$icon-size / 2;
-    content: url("example.png");
+    content: url("../../img/section-icons/Tarta@106x125.png");
     z-index: 1;
   }
 
