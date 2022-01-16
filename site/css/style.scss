@@ -456,14 +456,12 @@ i {
       }
 
       &__media-link-container {
-        // background-color: red;
         width: 32;
         height: 31px;
         display: flex;
         align-items: center;
 
         .footer-media-links-container__media-link {
-          // background-color: white;
           padding-left: 2px;
           padding-right: 2px;
           height: 100%;
@@ -572,9 +570,9 @@ i {
         width: 0;
         height: 0;
         border-bottom: 76px solid rgba(255, 255, 255, 0.8);
-        border-right: 76px solid transparent;
+        border-right: 40px solid transparent;
         position: absolute;
-        right: -76px;
+        right: -40px;
         top: 0;
       }
     }
@@ -867,7 +865,7 @@ i {
       height: fit-content;
       padding-top: 0;
       margin: 0 50px;
-      width: 100%;
+      // width: 100%;
 
       .footer-contact__item {
         &--top {
