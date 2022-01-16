@@ -449,7 +449,6 @@ a {
   }
 
   &__card {
-    background-color: red;
     width: 325px;
     height: 136px;
     position: relative;
@@ -483,6 +482,10 @@ a {
         right: -76px;
         top: 0;
       }
+    }
+
+    &--first {
+      background-image: url("img/main/fiestastematicas@325x136.png");
     }
   }
 }
