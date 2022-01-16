@@ -1,0 +1,5 @@
+@mixin banner($height: 70px, $width: 70px, $color) {
+  height: $height;
+  width: $width;
+  background-color: $color;
+}

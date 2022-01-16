@@ -33,13 +33,39 @@
     <title>Utensilios de repostería - Tienda online María Lunarillos</title>
   </head>
   <body>
-    <header>
-      <section class="banners"></section>
+    <header class="header">
       <nav class="main-nav">
-        <button class="main-nav__item"><i class="fa fa-bars"></i></button>
-        <button class="main-nav__item"><i class="fa fa-user-plus"></i></button>
+        <section class="banners">
+          <a href="" class="banners__banner banners__banner--main"></a
+          ><a href="" class="banners__banner banners__banner--secondary-one"></a
+          ><a
+            href=""
+            class="banners__banner banners__banner--secondary-two"
+          ></a>
+        </section>
+        <button class="main-nav__item main-nav__item--mobile">
+          <i class="fa fa-bars"></i>
+        </button>
+        <a class="main-nav__item main-nav__item--mobile"
+          ><i class="fa fa-user-plus"></i
+        ></a>
+        <a herf="" class="main-nav__item main-nav__item--desk"
+          ><i class="fa fa-user-plus"></i>
+          <p class="main-nav__item-text">ENTRA | REGÍSTRATE</p></a
+        >
+        <section
+          class="main-nav__item main-nav__item--desk main-nav__item--media"
+        >
+          <a href=""><i class="fa fa-bars"></i></a>
+          <a href=""><i class="fa fa-bars"></i></a>
+          <a href=""><i class="fa fa-bars"></i></a>
+          <a href=""><i class="fa fa-bars"></i></a>
+          <a href=""><i class="fa fa-bars"></i></a>
+        </section>
         <section class="main-nav__group">
-          <button class="main-nav-group__item main-nav-group__item--search">
+          <button
+            class="main-nav-group__item main-nav__item--mobile main-nav-group__item--search"
+          >
             <i class="fa fa-search"></i>
           </button>
           <section class="main-nav-group__item main-nav-group__item--cart">
@@ -50,14 +76,56 @@
           </section>
         </section>
       </nav>
-      <section class="header-logo-container">
-        <img
-          src=""
-          alt="Logo María Lunarillos"
-          class="header-logo-container__image"
-        />
-      </section>
-      <nav class="secondary-nav"></nav>
+      <div class="secondary-header">
+        <section class="header-logo-container">
+          <img
+            src=""
+            alt="Logo María Lunarillos"
+            class="header-logo-container__image"
+          />
+        </section>
+        <nav class="secondary-nav">
+          <section class="secondary-nav__slim">
+            <a href="" class="secondary-nav__slim-item"></a>
+            <a href="" class="secondary-nav__slim-item"></a>
+            <div
+              class="secondary-nav__slim-item secondary-nav__slim-item--search"
+            >
+              <input
+                type="text"
+                name=""
+                id=""
+                class="secondary-nav__search-input"
+              />
+              <button class="secondary-nav__search-icon"><i>L</i></button>
+            </div>
+          </section>
+          <section class="secondary-nav_icons">
+            <a href="" class="secondary-nav__icon"
+              ><img src="" alt="" class="secondary-title__item-image" />
+              <h2 class="secondary-nav__icon-title">UTENSILIOS</h2></a
+            >
+            <a href="" class="secondary-nav__icon"
+              ><img src="" alt="" class="secondary-title__item-image" />
+              <h2 class="secondary-nav__icon-title"></h2
+            ></a>
+            <a href="" class="secondary-nav__icon"
+              ><img src="" alt="" class="secondary-title__item-image" />
+              <h2 class="secondary-nav__icon-title"></h2
+            ></a>
+            <a href="" class="secondary-nav__icon"
+              ><img src="" alt="" class="secondary-title__item-image" />
+              <h2 class="secondary-nav__icon-title"></h2
+            ></a>
+            <a
+              href=""
+              class="secondary-nav__icon secondary-nav__icon--separated"
+              ><img src="" alt="" class="secondary-title__item-image" />
+              <h2 class="secondary-nav__icon-title"></h2
+            ></a>
+          </section>
+        </nav>
+      </div>
     </header>
     <main class="main-content">
       <h2 class="section-title">FIESTAS</h2>
