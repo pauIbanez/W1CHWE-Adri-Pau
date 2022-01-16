@@ -51,25 +51,31 @@ a {
 }
 
 .banners {
-  width: 232px;
+  width: $banners_width;
   height: 140px;
   background-color: blue;
   top: 0;
-  left: 20%;
+  left: 0;
   position: absolute;
 }
 
+.header {
+  height: fit-content;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: #f8f8f8;
+  z-index: 5;
+}
+
 .main-nav {
+  position: fixed;
+  width: 100vw;
   height: 50px;
   display: flex;
   justify-content: center;
   gap: 50px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #f8f8f8;
-  z-index: 5;
 
   &__item {
     width: 50px;
@@ -377,5 +383,17 @@ a {
 @media (min-width: 600px) {
   .banners {
     display: flex;
+  }
+
+  .header {
+    width: $header-width;
+    position: absolute;
+    top: 0;
+    left: calc(50% - ($header-width / 2));
+
+    .main-nav {
+      width: $header-width;
+      justify-content: flex-end;
+    }
   }
 }
