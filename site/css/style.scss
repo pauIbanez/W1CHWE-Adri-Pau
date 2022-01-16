@@ -171,8 +171,7 @@ a {
     flex-direction: column;
 
     .secondary-nav__slim {
-      height: 30px;
-      background-color: chocolate;
+      min-height: 30px;
       width: 100%;
       display: flex;
       justify-content: space-between;
@@ -189,6 +188,7 @@ a {
 
           .secondary-nav__search-input {
             flex: 1;
+            border-width: 0;
           }
 
           .secondary-nav__search-icon {
@@ -199,6 +199,14 @@ a {
             justify-content: center;
             align-items: center;
           }
+        }
+
+        &--left {
+          background-color: #9faa4c;
+        }
+
+        &--right {
+          background-color: #8e789e;
         }
       }
     }
