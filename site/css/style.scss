@@ -126,6 +126,10 @@ a {
   padding-top: 50px;
   width: 100%;
   height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
   .header-logo-container {
     display: flex;
     justify-content: center;
@@ -145,6 +149,36 @@ a {
     padding-top: 50px;
 
     .secondary-nav__slim {
+      height: 30px;
+      background-color: chocolate;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      .secondary-nav__slim-item {
+        flex: 1;
+        margin-right: 5px;
+        background-color: white;
+        &--search {
+          margin-right: 0;
+          flex: 2;
+          display: flex;
+          justify-content: flex-end;
+
+          .secondary-nav__search-input {
+            flex: 1;
+          }
+
+          .secondary-nav__search-icon {
+            background-color: #bcb8b5;
+            width: 49px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
     }
   }
 }
@@ -466,6 +500,10 @@ a {
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
+
+      .header-logo-container {
+        width: fit-content;
+      }
 
       .secondary-nav {
         display: flex;
