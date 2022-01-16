@@ -222,20 +222,22 @@
             RECIBE LAS NOVEDADES EN TU E-MAIL
           </h2>
           <form class="footer-contact__subscribe">
-            <input
-              type="email"
-              id="emailInp"
-              placeholder="Write your email here"
-              class="footer-subscribe__inp"
-              required
-            />
-            <div class="footer-contact__privacy-terms">
+            <div class="form-and-checkbox">
               <input
-                type="checkbox"
-                id="tos"
-                class="footer-subscribe__TOS"
+                type="email"
+                id="emailInp"
+                placeholder="Write your email here"
+                class="footer-subscribe__inp"
                 required
-              /><label for="tos">Acepto la política de privacidad</label>
+              />
+              <div class="footer-contact__privacy-terms">
+                <input
+                  type="checkbox"
+                  id="tos"
+                  class="footer-subscribe__TOS"
+                  required
+                /><label for="tos">Acepto la política de privacidad</label>
+              </div>
             </div>
             <button type="submit" class="button footer-subscribe__button">
               SUSCRÍBETE>
@@ -243,23 +245,24 @@
           </form>
         </section>
         <section class="footer-contact__item footer-contact__item--bottom">
-          <a href="" class="footer-contact__info"
-            ><i class="footer-contact__info-icon"
-              ><img src="img/footer-contact-icons/mail.png" alt="Mail icon"></i
-            ></i>
-            <p class="footer-contact__info-text">CONTACTO</p></a
-          >
-          <a href="" class="footer-contact__info"
-            ><i class="footer-contact__info-icon"
-              ><img src="img/footer-contact-icons/info.png" alt="Info icon"></i
-            ></i>
-            <p class="footer-contact__info-text">SOBRE NOSOTROS</p></a
-          >
-          <a href="" class="footer-contact__info"
-            ><i class="footer-contact__info-icon"
-              ><img src="img/footer-contact-icons/sell-conditions.png" alt="Shopping cart icon"></i>
-            <p class="footer-contact__info-text">CONDICIONES DE VENTA</p></a
-          >
+          <a href="" class="footer-contact__info">
+            <i class="footer-contact__info-icon">
+              <i class="fa fa-envelope"></i>
+            </i>
+            <p class="footer-contact__info-text">CONTACTO</p>
+          </a>
+          <a href="" class="footer-contact__info">
+            <i class="footer-contact__info-icon">
+              <i class="fa fa-info-circle"></i>
+            </i>
+            <p class="footer-contact__info-text">SOBRE NOSOTROS</p>
+          </a>
+          <a href="" class="footer-contact__info">
+            <i class="footer-contact__info-icon">
+              <i class="fa fa-shopping-cart"></i>
+            </i>
+            <p class="footer-contact__info-text">CONDICIONES DE VENTA</p>
+          </a>
         </section>
       </section>
       <section class="footer__copyright">

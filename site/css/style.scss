@@ -654,4 +654,100 @@ a {
       justify-content: center;
     }
   }
+
+  .footer {
+    &__header {
+      padding: 45px 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      max-height: max-content;
+
+      .footer-header__item {
+        width: fit-content;
+
+        &-title {
+          display: flex;
+          justify-content: center;
+        }
+
+        &-text {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+
+    &__contact-media {
+      display: flex;
+      flex-direction: row;
+      height: fit-content;
+      padding-top: 0;
+      margin: 0 50px;
+
+      .footer-contact__item {
+        &--top {
+          display: flex;
+          align-items: flex-start;
+        }
+
+        &--main {
+          display: flex;
+          align-items: flex-start;
+          border-right: 1px solid #bbb8b6;
+          border-left: 1px solid #bbb8b6;
+          border-top: none;
+          border-bottom: none;
+          height: 70%;
+          padding: 0 50px;
+
+          .footer-contact {
+            &__section-title {
+            }
+
+            &__subscribe {
+              display: flex;
+              flex-direction: row;
+              width: fit-content;
+              align-items: flex-start;
+
+              .form-and-checkbox {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+              }
+
+              .footer-contact__privacy-terms {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 12px;
+              }
+
+              .footer-subscribe__button {
+                width: fit-content;
+                margin-left: 10px;
+              }
+            }
+          }
+        }
+
+        &--bottom {
+          display: flex;
+          align-items: flex-start;
+
+          .footer-contact__info {
+            display: flex;
+            flex-direction: row;
+            height: min-content;
+            margin: 0;
+            margin-bottom: 9px;
+            gap: 12px;
+            padding-left: 25px;
+          }
+        }
+      }
+    }
+  }
 }
