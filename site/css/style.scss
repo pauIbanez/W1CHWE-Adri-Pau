@@ -482,6 +482,27 @@ i {
   }
 }
 
+.section-title {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 218px;
+  font-size: 22px;
+  margin-top: ($icon-size / 2) + 20px;
+  margin-bottom: ($icon-size / 2);
+
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  font-stretch: 100%;
+  letter-spacing: 6px;
+  font-weight: 900;
+}
+
 .main-content {
   margin-top: $icon-size / 2;
   height: fit-content;
@@ -504,27 +525,6 @@ i {
     margin-left: -$icon-size / 2;
     content: url("example.png");
     z-index: 1;
-  }
-
-  .section-title {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 218px;
-    font-size: 22px;
-    margin-top: ($icon-size / 2) + 20px;
-    margin-bottom: ($icon-size / 2);
-
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    font-stretch: 100%;
-    letter-spacing: 6px;
-    font-weight: 900;
   }
 
   &__cards-container {
@@ -689,6 +689,15 @@ i {
     }
   }
 
+  .section-title {
+    letter-spacing: 10px;
+    font-size: 30px;
+    width: 300px;
+  }
+
+  .main-content {
+  }
+
   .brands {
     display: flex;
     background-color: blue;
@@ -698,7 +707,8 @@ i {
     padding-bottom: 125px;
 
     .section-title {
-      padding-top: 165px;
+      width: 400px;
+      margin-top: 165px;
     }
 
     .brands-container {
