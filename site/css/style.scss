@@ -691,14 +691,17 @@ i {
 
   .brands {
     display: flex;
-    background-color: blue;
     width: 100%;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 125px;
+    justify-content: flex-start;
 
     .section-title {
-      padding-top: 165px;
+      font-weight: 900;
+      letter-spacing: 6px;
+      font-size: 22px;
+      padding: 20px;
+      line-height: 22px;
     }
 
     .brands-container {
@@ -708,14 +711,19 @@ i {
       padding-top: 67px;
       padding-bottom: 95px;
       justify-content: center;
+      gap: 15px;
 
       &__brand {
-        background-color: coral;
         height: 75px;
-        width: 150px;
+        width: fit-content;
         display: flex;
         align-items: center;
         justify-content: center;
+        filter: grayscale(100%) opacity(0.6);
+
+        &:hover {
+          filter: none;
+        }
       }
     }
 
