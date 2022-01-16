@@ -70,7 +70,8 @@ i {
   position: relative;
   top: 0;
   left: 0;
-  width: 100vw;
+  // width: 100vw;
+  width: 100%;
   z-index: 5;
 }
 
@@ -375,7 +376,7 @@ i {
       &__item {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        // width: 100%;
         justify-content: center;
         align-items: center;
 
@@ -456,9 +457,8 @@ i {
       }
 
       &__media-link-container {
-        // background-color: red;
-        width: 32;
         height: 31px;
+        width: 100%;
         display: flex;
         align-items: center;
 
@@ -867,7 +867,6 @@ i {
       height: fit-content;
       padding-top: 0;
       margin: 0 50px;
-      width: 100%;
 
       .footer-contact__item {
         &--top {
