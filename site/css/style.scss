@@ -689,15 +689,6 @@ i {
     }
   }
 
-  .section-title {
-    letter-spacing: 10px;
-    font-size: 30px;
-    width: 300px;
-  }
-
-  .main-content {
-  }
-
   .brands {
     display: flex;
     width: 100%;
@@ -706,8 +697,12 @@ i {
     justify-content: flex-start;
 
     .section-title {
-      width: 411px;
+      width: 300px;
       margin-top: 165px;
+      letter-spacing: 10px;
+      font-size: 30px;
+      white-space: nowrap;
+      text-align: center;
     }
 
     .brands-container {
