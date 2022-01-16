@@ -371,6 +371,11 @@ i {
     flex-direction: column;
     padding-top: 20px;
 
+    .section-separator {
+      width: 70%;
+      border: 1px solid #bbb8b6;
+    }
+
     .footer-contact {
       &__item {
         display: flex;
@@ -397,8 +402,6 @@ i {
           display: flex;
           align-items: center;
           height: 250px;
-          border-top: 1px solid #bbb8b6;
-          border-bottom: 1px solid #bbb8b6;
         }
 
         a {
