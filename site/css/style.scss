@@ -328,6 +328,7 @@ i {
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
+        color: #64605d;
 
         h2,
         p {
@@ -346,7 +347,8 @@ i {
       &__item-title {
         width: 100%;
         height: 18px;
-        font-size: 15px;
+        font-weight: 600;
+        font-size: 16px;
       }
 
       &__item-text {
@@ -744,6 +746,7 @@ i {
       align-items: center;
       flex-direction: row;
       max-height: max-content;
+      gap: 30px;
 
       .footer-header__item {
         width: fit-content;
