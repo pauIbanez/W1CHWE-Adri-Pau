@@ -55,7 +55,6 @@ a {
 .banners {
   width: $banners_width;
   height: 140px;
-  background-color: blue;
   top: 0;
   left: 0;
   position: absolute;
@@ -389,6 +388,23 @@ a {
 @media (min-width: 600px) {
   .banners {
     display: flex;
+    justify-content: space-between;
+    &__banner {
+      &--main {
+        @include banner(140px, 80px, #ff5959);
+        order: -1;
+      }
+      &--secondary-one {
+        @include banner($color: #619aae);
+      }
+      &--secondary-two {
+        @include banner($color: #f5b436);
+      }
+
+      &:hover {
+        height: 140px;
+      }
+    }
   }
 
   .header {
