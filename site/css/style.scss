@@ -506,7 +506,8 @@ i {
 }
 
 .main-content {
-  margin-top: $icon-size / 2;
+  margin-top: calc($icon-size / 2);
+  padding-top: calc($icon-size / 4);
   height: fit-content;
   background-color: #f8f8f8;
   position: relative;
@@ -518,14 +519,13 @@ i {
   &::before {
     min-height: $icon-size;
     min-width: $icon-size;
-    background-color: green;
     display: flex;
     justify-content: center;
     position: absolute;
-    top: -$icon-size / 2;
+    top: calc(0px - $icon-size / 2);
     left: 50%;
     margin-left: -$icon-size / 2;
-    content: url("example.png");
+    content: url("../../img/section-icons/Tarta@106x125.png");
     z-index: 1;
   }
 
@@ -562,6 +562,10 @@ i {
         font-size: 18px;
       }
 
+      p {
+        display: none;
+      }
+
       &::after {
         content: "";
         display: inline-block;
@@ -577,12 +581,21 @@ i {
 
     &--first {
       background-image: url("../../img/main/fiestastematicas@325x136.png");
+      img {
+        display: none;
+      }
     }
     &--seccond {
       background-image: url("../../img/main/fiestaspersonajes@325x136.png");
+      img {
+        display: none;
+      }
     }
     &--third {
       background-image: url("../../img/main/accesoriosfiestas@325x136.png");
+      img {
+        display: none;
+      }
     }
   }
 }
@@ -687,6 +700,91 @@ i {
 
       .secondary-nav {
         display: flex;
+      }
+    }
+  }
+
+  .section-title {
+    letter-spacing: 10px;
+    font-size: 30px;
+    width: 300px;
+  }
+
+  .main-content {
+    &__cards-container {
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 15px;
+      width: 1080px;
+      height: 615px;
+      margin-bottom: 95px;
+
+      .main-content__card {
+        height: 300px;
+        width: 715px;
+
+        .card__card-info {
+          height: 150px;
+          width: 250px;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 10px;
+          padding-right: 0;
+
+          h2 {
+            font-weight: 700;
+            font-size: 24px;
+          }
+
+          p {
+            display: block;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px;
+          }
+
+          &::after {
+            right: -100px;
+            border-bottom: 150px solid rgba(255, 255, 255, 0.8);
+            border-right: 100px solid transparent;
+          }
+        }
+
+        &--first {
+          order: 1;
+          background-image: none;
+
+          img {
+            display: block;
+          }
+
+          .card__card-info {
+            left: calc(100% - 350px);
+          }
+        }
+        &--seccond {
+          order: 3;
+          background-image: none;
+          img {
+            display: block;
+          }
+        }
+        &--third {
+          order: 2;
+          height: 300px;
+          width: 350px;
+          display: flex;
+          align-items: flex-start;
+          background-image: none;
+          img {
+            display: block;
+          }
+
+          .card__card-info {
+            bottom: calc(0px - (615px - 300px));
+          }
+        }
       }
     }
   }
