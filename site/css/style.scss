@@ -36,6 +36,7 @@ a {
   text-decoration: none;
   display: flex;
   align-items: center;
+  color: black;
 
   &:visited {
     color: inherit;
@@ -417,6 +418,12 @@ i {
             margin-bottom: 9px;
             font-size: 14px;
             color: #ff5959;
+
+            p {
+              &:hover {
+                text-decoration: underline;
+              }
+            }
           }
         }
 
