@@ -396,12 +396,6 @@ i {
     }
   }
 
-  &__copyright {
-    background-color: black;
-    width: 100%;
-    height: 50px;
-  }
-
   &__contact-media {
     height: 750px;
     display: flex;
@@ -468,17 +462,6 @@ i {
           justify-content: center;
           height: 250px;
           font-size: 14px;
-
-          input[type="checkbox"] {
-            // border-radius: 0;
-            border: 2px solid #bbb8b6;
-            height: 18px;
-            width: 18px;
-            outline: none;
-            &:hover {
-              cursor: pointer;
-            }
-          }
 
           input[type="checkbox"] {
             // border-radius: 0;
