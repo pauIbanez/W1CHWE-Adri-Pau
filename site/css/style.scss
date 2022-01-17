@@ -426,6 +426,11 @@ i {
         &--top {
           height: 160px;
 
+          .footer-contact__media-link-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+          }
           a {
             &:hover {
               filter: grayscale(80%) brightness(80%);
@@ -1018,6 +1023,11 @@ i {
         &--top {
           display: flex;
           align-items: flex-start;
+
+          .footer-contact__media-link-container {
+            width: fit-content;
+            justify-content: flex-start;
+          }
         }
 
         &--main {
