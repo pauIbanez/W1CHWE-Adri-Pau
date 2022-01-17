@@ -34,12 +34,12 @@ p {
 }
 a {
   text-decoration: none;
-  color: black;
   display: flex;
   align-items: center;
+  color: black;
 
   &:visited {
-    color: black;
+    color: inherit;
   }
 }
 
@@ -272,6 +272,15 @@ i {
         flex-direction: column;
         justify-content: space-between;
         background-color: #f2f2f2;
+        color: #2e2925;
+
+        &:hover {
+          background-color: #ff5959;
+
+          img {
+            filter: brightness(0.5);
+          }
+        }
 
         &--separated {
           position: absolute;
@@ -279,8 +288,20 @@ i {
           right: 0;
 
           background-color: #ff5959;
+          font-weight: 400;
           h2.secondary-nav__icon-title {
             color: #ff5959;
+          }
+
+          &:hover {
+            background-color: #f2f2f2;
+
+            img {
+              filter: brightness(0.5);
+            }
+            h2.secondary-nav__icon-title {
+              color: #2e2925;
+            }
           }
         }
 
@@ -333,6 +354,17 @@ i {
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
+
+        &:hover {
+          color: #ff5959;
+          cursor: pointer;
+
+          img {
+            //WTF mirate esto mario: https://codepen.io/sosuke/pen/Pjoqqp
+            filter: invert(45%) sepia(36%) saturate(1044%) hue-rotate(313deg)
+              brightness(103%) contrast(100%);
+          }
+        }
 
         h2,
         p {
@@ -392,6 +424,13 @@ i {
 
         &--top {
           height: 160px;
+
+          a {
+            &:hover {
+              filter: grayscale(80%) brightness(80%);
+              cursor: pointer;
+            }
+          }
         }
 
         &--bottom {
@@ -401,6 +440,7 @@ i {
             margin-bottom: 9px;
             font-size: 14px;
             color: #ff5959;
+
             display: flex;
             align-items: center;
             flex-direction: column;
@@ -411,6 +451,15 @@ i {
             p {
               margin: 0;
               padding: 0;
+              
+
+
+              &:hover {
+
+                text-decoration: underline;
+
+              }
+
             }
           }
         }
@@ -422,7 +471,24 @@ i {
 
           border-top: 1px solid #bbb8b6;
           border-bottom: 1px solid #bbb8b6;
+          
           font-size: 14px;
+
+
+          input[type="checkbox"] {
+            // border-radius: 0;
+            border: 2px solid #bbb8b6;
+            height: 18px;
+            width: 18px;
+            outline: none;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+
+          
+
 
 
 
@@ -698,6 +764,12 @@ i {
           }
         }
 
+        &--user {
+          &:hover {
+            color: #ff5959;
+          }
+        }
+
         .fa-bars {
           color: #000;
         }
@@ -711,6 +783,19 @@ i {
             width: 39px;
             display: flex;
             justify-content: center;
+
+            &:hover {
+              color: #ff5959;
+            }
+          }
+        }
+      }
+
+      &__group {
+        .main-nav-group__item--cart {
+          &:hover {
+            background-color: #ff5959;
+            color: white;
           }
         }
       }
@@ -758,6 +843,10 @@ i {
         height: 300px;
         width: 715px;
 
+        &:hover {
+          cursor: pointer;
+        }
+
         .card__card-info {
           height: 150px;
           width: 250px;
@@ -769,6 +858,10 @@ i {
           h2 {
             font-weight: 700;
             font-size: 24px;
+
+            &:hover {
+              text-decoration: underline;
+            }
           }
 
           p {
@@ -819,6 +912,17 @@ i {
             bottom: calc(0px - (615px - 300px));
           }
         }
+      }
+    }
+
+    &__button {
+      &:hover {
+        color: white;
+        cursor: pointer;
+      }
+
+      &:visited {
+        color: white;
       }
     }
   }
