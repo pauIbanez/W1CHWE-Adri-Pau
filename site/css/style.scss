@@ -401,6 +401,13 @@ i {
 
         &--top {
           height: 160px;
+
+          a {
+            &:hover {
+              filter: grayscale(80%) brightness(80%);
+              cursor: pointer;
+            }
+          }
         }
 
         &--bottom {
@@ -419,6 +426,17 @@ i {
           height: 250px;
           border-top: 1px solid #bbb8b6;
           border-bottom: 1px solid #bbb8b6;
+
+          input[type="checkbox"] {
+            // border-radius: 0;
+            border: 2px solid #bbb8b6;
+            height: 18px;
+            width: 18px;
+            outline: none;
+            &:hover {
+              cursor: pointer;
+            }
+          }
         }
 
         a {
