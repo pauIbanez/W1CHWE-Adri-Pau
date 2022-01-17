@@ -449,17 +449,9 @@ i {
             gap: 5px;
 
             p {
-              margin: 0;
-              padding: 0;
-              
-
-
               &:hover {
-
                 text-decoration: underline;
-
               }
-
             }
           }
         }
@@ -487,11 +479,16 @@ i {
           }
         }
 
-          
-
-
-
-
+          input[type="checkbox"] {
+            // border-radius: 0;
+            border: 2px solid #bbb8b6;
+            height: 18px;
+            width: 18px;
+            outline: none;
+            &:hover {
+              cursor: pointer;
+            }
+          }
 
           input {
             border: 1px solid #67625f;
@@ -1015,15 +1012,10 @@ i {
       padding-top: 0;
       margin: 0 50px;
 
-
-
-
-
       .section-separator {
         height: 150px;
         width: 0;
       }
-
 
       .footer-contact__item {
         &--top {
