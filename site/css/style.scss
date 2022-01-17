@@ -862,20 +862,28 @@ i {
       display: flex;
       align-items: center;
       flex-direction: row;
-      max-height: max-content;
+      // max-height: max-content;
+      height: fit-content;
+      padding-top: 48px;
+      padding-bottom: 48px;
       gap: 30px;
 
-      .footer-header__item {
-        width: fit-content;
+      .footer-header {
+        &__item {
+          width: fit-content;
+          height: fit-content;
+          padding-top: 0;
+          padding-bottom: 0;
 
-        &-title {
-          display: flex;
-          justify-content: center;
-        }
+          &-title {
+            display: flex;
+            justify-content: center;
+          }
 
-        &-text {
-          display: flex;
-          justify-content: center;
+          &-text {
+            display: flex;
+            justify-content: center;
+          }
         }
       }
     }
