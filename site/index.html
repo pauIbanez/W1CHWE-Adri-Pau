@@ -47,7 +47,10 @@
             <img src="img/banners/mumuchu.png" alt="Logo mumuchu"
           /></a>
         </section>
-        <button class="main-nav__item main-nav__item--mobile">
+        <button
+          class="main-nav__item main-nav__item--mobile"
+          aria-label="Desplegar menu"
+        >
           <i class="fa fa-bars"></i>
         </button>
         <a class="main-nav__item main-nav__item--mobile"
@@ -71,11 +74,12 @@
         <section class="main-nav__group">
           <button
             class="main-nav-group__item main-nav__item--mobile main-nav-group__item--search"
+            aria-label="Buscar"
           >
             <i class="fa fa-search"></i>
           </button>
           <section class="main-nav-group__item main-nav-group__item--cart">
-            <a href="" class="cart__item"
+            <a href="" class="cart__item" aria-label="Carro de la compra"
               ><i class="fa fa-shopping-cart"></i
             ></a>
             <span class="cart__item cart__item2" id="cart-counter">0</span>
@@ -84,7 +88,11 @@
       </nav>
       <div class="secondary-header">
         <section class="header-logo-container">
-          <a href="#" class="header-logo-container__image"></a>
+          <a
+            href="#"
+            class="header-logo-container__image"
+            aria-label="Logo Maria Lunarillos"
+          ></a>
         </section>
         <nav class="secondary-nav">
           <section class="secondary-nav__slim">
@@ -108,7 +116,7 @@
                 class="secondary-nav__search-input"
                 placeholder="¿QUÉ BUSCAS?"
               />
-              <button class="secondary-nav__search-icon">
+              <button class="secondary-nav__search-icon" aria-label="Buscar">
                 <i class="fa fa-search"></i>
               </button>
             </div>
@@ -343,7 +351,7 @@
                 id="emailInp"
                 class="footer-subscribe__inp"
                 required
-              />
+              /><label for="emailInp"></label>
               <div class="footer-contact__privacy-terms">
                 <input
                   type="checkbox"
