@@ -351,6 +351,17 @@ i {
         align-items: center;
         color: #64605d;
 
+        &:hover {
+          color: #ff5959;
+          cursor: pointer;
+
+          img {
+            //WTF mirate esto mario: https://codepen.io/sosuke/pen/Pjoqqp
+            filter: invert(45%) sepia(36%) saturate(1044%) hue-rotate(313deg)
+              brightness(103%) contrast(100%);
+          }
+        }
+
         h2,
         p {
           display: flex;
