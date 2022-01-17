@@ -440,6 +440,7 @@ i {
             margin-bottom: 9px;
             font-size: 14px;
             color: #ff5959;
+
             display: flex;
             align-items: center;
             flex-direction: column;
@@ -462,8 +463,21 @@ i {
 
           border-top: 1px solid #bbb8b6;
           border-bottom: 1px solid #bbb8b6;
-
+          
           font-size: 14px;
+
+
+          input[type="checkbox"] {
+            // border-radius: 0;
+            border: 2px solid #bbb8b6;
+            height: 18px;
+            width: 18px;
+            outline: none;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
 
           input[type="checkbox"] {
             // border-radius: 0;
