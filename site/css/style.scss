@@ -745,6 +745,10 @@ i {
         height: 300px;
         width: 715px;
 
+        &:hover {
+          cursor: pointer;
+        }
+
         .card__card-info {
           height: 150px;
           width: 250px;
@@ -756,6 +760,10 @@ i {
           h2 {
             font-weight: 700;
             font-size: 24px;
+
+            &:hover {
+              text-decoration: underline;
+            }
           }
 
           p {
