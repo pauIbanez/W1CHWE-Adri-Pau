@@ -34,12 +34,11 @@ p {
 }
 a {
   text-decoration: none;
-  color: black;
   display: flex;
   align-items: center;
 
   &:visited {
-    color: black;
+    color: inherit;
   }
 }
 
@@ -814,6 +813,17 @@ i {
             bottom: calc(0px - (615px - 300px));
           }
         }
+      }
+    }
+
+    &__button {
+      &:hover {
+        color: white;
+        cursor: pointer;
+      }
+
+      &:visited {
+        color: white;
       }
     }
   }
