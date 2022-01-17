@@ -372,6 +372,11 @@ i {
     flex-direction: column;
     padding-top: 20px;
 
+    .section-separator {
+      width: 70%;
+      border: 1px solid #bbb8b6;
+    }
+
     .footer-contact {
       &__item {
         display: flex;
@@ -398,8 +403,6 @@ i {
           display: flex;
           align-items: center;
           height: 250px;
-          border-top: 1px solid #bbb8b6;
-          border-bottom: 1px solid #bbb8b6;
         }
 
         a {
@@ -869,6 +872,11 @@ i {
       padding-top: 0;
       margin: 0 50px;
 
+      .section-separator {
+        height: 150px;
+        width: 0;
+      }
+
       .footer-contact__item {
         &--top {
           display: flex;
@@ -878,10 +886,6 @@ i {
         &--main {
           display: flex;
           align-items: flex-start;
-          border-right: 1px solid #bbb8b6;
-          border-left: 1px solid #bbb8b6;
-          border-top: none;
-          border-bottom: none;
           height: 70%;
           padding: 0 50px;
 
