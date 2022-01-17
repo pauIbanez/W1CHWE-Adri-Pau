@@ -334,6 +334,7 @@ i {
           display: flex;
           justify-content: center;
           text-align: center;
+          color: #67625f;
         }
       }
 
@@ -390,6 +391,16 @@ i {
             margin-bottom: 9px;
             font-size: 14px;
             color: #ff5959;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            height: 62px;
+
+            p {
+              margin: 0;
+              padding: 0;
+            }
           }
         }
 
@@ -399,18 +410,21 @@ i {
           height: 250px;
           border-top: 1px solid #bbb8b6;
           border-bottom: 1px solid #bbb8b6;
-        }
+          font-size: 14px;
 
-        a {
-          display: flex;
-          align-items: center;
-          flex-direction: column;
-          justify-content: center;
-          height: 62px;
+          input {
+            border: 1px solid #67625f;
 
-          p {
-            margin: 0;
-            padding: 0;
+            &:focus {
+              outline: none;
+            }
+          }
+
+          a {
+            text-decoration: underline;
+            display: block;
+            font-size: inherit;
+            color: inherit;
           }
         }
       }
@@ -424,12 +438,18 @@ i {
           display: flex;
           flex-direction: column;
           align-items: center;
-          gap: 3px;
+          gap: 5px;
+          margin-bottom: 5px;
 
           .footer-contact__privacy-terms {
             display: flex;
             align-items: center;
             gap: 12px;
+
+            label {
+              display: flex;
+              gap: 3px;
+            }
           }
         }
 
