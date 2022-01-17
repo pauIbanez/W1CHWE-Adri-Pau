@@ -334,6 +334,7 @@ i {
   background-color: #f8f8f8;
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
   margin-top: 125px;
 
@@ -459,6 +460,7 @@ i {
         &--main {
           display: flex;
           align-items: center;
+          justify-content: center;
           height: 250px;
           font-size: 14px;
 
@@ -1005,6 +1007,7 @@ i {
       justify-content: center;
       padding-top: 0;
       margin: 0 50px;
+      width: 70%;
 
       .section-separator {
         height: 150px;
