@@ -684,6 +684,12 @@ i {
           }
         }
 
+        &--user {
+          &:hover {
+            color: #ff5959;
+          }
+        }
+
         .fa-bars {
           color: #000;
         }
@@ -697,6 +703,19 @@ i {
             width: 39px;
             display: flex;
             justify-content: center;
+
+            &:hover {
+              color: #ff5959;
+            }
+          }
+        }
+      }
+
+      &__group {
+        .main-nav-group__item--cart {
+          &:hover {
+            background-color: #ff5959;
+            color: white;
           }
         }
       }
